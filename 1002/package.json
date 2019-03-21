@@ -1,0 +1,20 @@
+{
+  "name": "1002",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "start": "yarn build && node ./lib/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0"
+  }
+}
