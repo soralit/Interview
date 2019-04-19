@@ -5,14 +5,17 @@
   "main": "src/main.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-dir lib",
-    "start": "yarn build && node ./lib/main.js"
+    "start": "yarn build && node ./lib/main.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2"
+    "@babel/preset-env": "^7.4.2",
+    "babel-jest": "23.6.0",
+    "jest": "^24.7.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0"
